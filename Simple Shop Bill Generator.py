@@ -24,9 +24,17 @@ def Final_Amount():
 print("--Welcome To Simple Shop Bill Generator--")
 print("-----------------------------------------")
 
-Item_Name = input("Enter Your Item Name : ")
-Quantity = float(input("Enter Your Quantity : "))
-Price_Per_Item = float(input("Enter Price Per Item : "))
+
+while True:
+
+    Item_Name = input("Enter Your Item Name : ")
+    Quantity = float(input("Enter Your Quantity : "))
+    Price_Per_Item = float(input("Enter Price Per Item : "))
+
+    user_choice = input("\nAre you add another item ? (Y/N) : ")
+    if user_choice.upper() == "N":
+        break
+
 
 print("-----------------------------------------")
 
